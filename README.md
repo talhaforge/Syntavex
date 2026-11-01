@@ -8,7 +8,7 @@
 Trace every autonomous decision, enforce policy at the boundary, and put a human in front of anything irreversible.</p>
 
 <p align="center">
-  <a href="https://github.com/talhaali3301/Syntavex/actions/workflows/tests.yml"><img src="https://github.com/talhaali3301/Syntavex/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://github.com/talhaforge/Syntavex/actions/workflows/tests.yml"><img src="https://github.com/talhaforge/Syntavex/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
   <img src="https://img.shields.io/badge/tests-146%20passing-55D98B" alt="146 tests passing">
   <img src="https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white" alt="Laravel 12">
   <img src="https://img.shields.io/badge/Vue-3-42B883?logo=vuedotjs&logoColor=white" alt="Vue 3">
@@ -22,8 +22,8 @@ Trace every autonomous decision, enforce policy at the boundary, and put a human
 </p>
 
 <p align="center">
-  <strong><a href="#">Live demo</a></strong> <sub>(link coming soon)</sub><br>
-  Sign in with <code>demo@syntavex.app</code> / <code>syntavex-demo</code>, or just press <strong>Enter demo →</strong>
+  <strong><a href="#local-setup">Run it locally</a></strong> · <strong><a href="#screenshots">See all five screens</a></strong><br>
+  <sub>Concept project with seeded data. Clone it, seed it and press <strong>Enter demo →</strong></sub>
 </p>
 
 ---
@@ -97,7 +97,7 @@ Workspace ─┬─ Workflow ── WorkflowRun ─┬─ RunStep (webhook · re
 Requires PHP 8.2+, Composer, and Node 20.19+.
 
 ```bash
-git clone https://github.com/talhaali3301/Syntavex.git
+git clone https://github.com/talhaforge/Syntavex.git
 cd Syntavex
 
 composer install
@@ -106,13 +106,13 @@ npm install
 cp .env.example .env
 php artisan key:generate
 
-touch database/database.sqlite   # SQLite is the default connection
+touch database/database.sqlite
 php artisan migrate:fresh --seed
 
 composer run dev
 ```
 
-Open http://localhost:8000 and press **Enter demo →**. The seed is relative to the current time, so the runs and review queue always look recent. Run `migrate:fresh --seed` again any time to reset the demo after making decisions.
+Open http://localhost:8000 and press **Enter demo →** (or sign in with `demo@syntavex.app` / `syntavex-demo`). The seed is relative to the current time, so the runs and review queue always look recent. Run `migrate:fresh --seed` again any time to reset the demo after making decisions.
 
 ## Testing
 
@@ -130,5 +130,5 @@ php artisan test
 
 **Talha Ali**
 
-- LinkedIn: [linkedin.com/in/talha-ali-b7959b132](https://www.linkedin.com/in/talha-ali-b7959b132)
+- LinkedIn: [linkedin.com/in/talhaforge](https://www.linkedin.com/in/talhaforge)
 - Portfolio: [robocoders.dev](https://robocoders.dev/)
